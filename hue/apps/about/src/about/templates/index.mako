@@ -111,7 +111,7 @@ ${commonheader(_('About ' + page_title), "about", user, "100px")| n,unicode}
                 </div> 
                 <div class="copyright">
                     <p class="pull-right">
-                        Copyright © 2013 The Apache Software Foundation.
+                        Copyright 2013 The Apache Software Foundation.
                         <br>
                         Apache Hadoop, Hadoop, HDFS, HBase, Hive, Mahout, Pig, Zookeeper are trademarks of the Apache Software Foundation.
                         <br>
