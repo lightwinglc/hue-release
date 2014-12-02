@@ -1352,10 +1352,16 @@ msgid "Did you know?"
 msgstr "您知道吗？"
 
 #: src/beeswax/templates/execute.mako:236
-msgid ""
-"You can execute queries with multiple SQL statements delimited by a "
-"semicolon ';'."
-msgstr ""
+msgid "You can execute queries with multiple SQL statements delimited by a semicolon ';'."
+msgstr "您可以执行多个由';'分隔的SQL语句"
+
+#: src/beeswax/templates/execute.mako:214
+msgid "Press ctrl+space for autocompletion"
+msgstr "使用ctrl+space按键自动完成"
+
+#: src/beeswax/templates/execute.mako:215
+msgid "To see table fields helper type table_name + \".\" (e.g. sample_07.)"
+msgstr "需要表字段帮助可以使用表名加点，如sample_07."
 
 #: src/beeswax/templates/execute.mako:237
 msgid "Use '\\059' instead of ';' if you have some conflicts."

@@ -211,8 +211,8 @@ ${layout.menubar(section='query')}
                               <div id="help-content" class="hide">
                                 <ul class="text-success">
                                   <li>${ _("You can execute queries with multiple SQL statements delimited by a semicolon ';'.") }</li>
-                                  <li>Press ctrl+space for autocompletion</li>
-                                  <li>To see table fields helper type table_name + "." (e.g. sample_07.)</li>
+                                  <li>${ _("Press ctrl+space for autocompletion") }</li>
+                                  <li>${ _("To see table fields helper type table_name + \".\" (e.g. sample_07.)") }</li>
                                 </ul>
                               </div>
             </div>         
@@ -398,7 +398,7 @@ ${layout.menubar(section='query')}
         $("*[rel=tooltip]").tooltip({
             placement: 'bottom'
         });
-        $("#help").popover({'title': "${'Did you know?'}", 'content': $("#help-content").html(), 'html': true, 'placement': 'bottom'});
+        $("#help").popover({'title': "${_('Did you know?') }", 'content': $("#help-content").html(), 'html': true, 'placement': 'bottom'});
         $("a[data-form-prefix]").each(function(){
             var _prefix = $(this).attr("data-form-prefix");
             var _nextID = 0;
