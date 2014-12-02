@@ -1765,17 +1765,76 @@ msgid "for continuing the execution of the remaining statements."
 msgstr ""
 
 #: src/beeswax/templates/watch_results.mako:115
-#, fuzzy
-msgid ""
-"If the result contains a large number of columns, click a row to select a"
-" column to jump to."
-msgstr "您可单击一行，选择您希望跳转至的列。"
+msgid "If the result contains a large number of columns, click a row to select a column to jump to."
+msgstr "如果执行结果包含大量的列，您可单击一行，选择您希望跳转至的列。"
 
 #: src/beeswax/templates/watch_results.mako:116
-msgid ""
-"As you type into the field, a drop-down list displays column names that "
-"match the string."
-msgstr ""
+msgid "As you type into the field, a drop-down list displays column names that match the string."
+msgstr "当您输入列名的时候，下拉列表中会显示符合您输入的列名称。"
+
+#: src/beeswax/templates/watch_results.mako:80
+msgid "Enable visualization"
+msgstr "开启可视化"
+
+#: src/beeswax/templates/watch_results.mako:136
+msgid "Visualizations"
+msgstr "可视化"
+
+#: src/beeswax/templates/watch_results.mako:241
+msgid "x Axis:"
+msgstr "x 轴："
+
+#: src/beeswax/templates/watch_results.mako:256
+msgid "chart type:"
+msgstr "图表类型："
+
+#: src/beeswax/templates/watch_results.mako:257
+msgid "area"
+msgstr "面积图"
+
+#: src/beeswax/templates/watch_results.mako:258
+msgid "bar"
+msgstr "柱状图"
+
+#: src/beeswax/templates/watch_results.mako:259
+msgid "line"
+msgstr "折线图"
+
+#: src/beeswax/templates/watch_results.mako:260
+msgid "scatter"
+msgstr "散点图"
+
+#: src/beeswax/templates/watch_results.mako:261
+msgid "pie"
+msgstr "饼图"
+
+#: src/beeswax/templates/watch_results.mako:264
+msgid "value type:"
+msgstr "值类型："
+
+#: src/beeswax/templates/watch_results.mako:265
+msgid "stack"
+msgstr "栈"
+
+#: src/beeswax/templates/watch_results.mako:266
+msgid "value"
+msgstr "值"
+
+#: src/beeswax/templates/watch_results.mako:269
+msgid "Sort:"
+msgstr "排序"
+
+#: src/beeswax/templates/watch_results.mako:275
+msgid "Direction:"
+msgstr "方向："
+
+#: src/beeswax/templates/watch_results.mako:276
+msgid "asc"
+msgstr "正序"
+
+#: src/beeswax/templates/watch_results.mako:277
+msgid "desc"
+msgstr "倒序"
 
 #: src/beeswax/templates/watch_results.mako:124
 msgid "Error"

@@ -133,7 +133,7 @@ ${layout.menubar(section='query')}
         % if not error:
         <li><a href="#columns" data-toggle="tab">${_('Columns')}</a></li>
         % if download_urls:
-        <!--Visualization --><li><a href="#visualizations" data-toggle="tab" style="display: none;">Visualizations</a></li><!--/Visualization -->
+        <!--Visualization --><li><a href="#visualizations" data-toggle="tab" style="display: none;">${_('Visualizations') }</a></li><!--/Visualization -->
         % endif
         % endif
       </ul>
@@ -238,7 +238,7 @@ ${layout.menubar(section='query')}
               </textarea>-->
           <div class='chart_type_selectors'>
             <div class='chart_type_wrap x_axis'>
-              <div class="nav-header">x Axis:</div>
+              <div class="nav-header">${_('x Axis:') }</div>
               <select name="xAxis" id="xAxis">
                 % for col in columns:
                 <option value='"${col}"'>${col}</option>
@@ -253,28 +253,28 @@ ${layout.menubar(section='query')}
               % endfor
             </div>
             <div class='chart_type_wrap chart_type'>
-              <div class="nav-header">chart type:</div>
-              <input type="radio" name="type" value="area"        id="area"  checked="checked"/><label for="area">area</label>
-              <input type="radio" name="type" value="bar"         id="bar"                    /><label for="bar">bar</label>
-              <input type="radio" name="type" value="line"        id="line"                   /><label for="line">line</label>
-              <input type="radio" name="type" value="scatterplot" id="scatterplot"            /><label for="scatterplot">scatter</label>
-              <input type="radio" name="type" value="pie"         id="pie"                    /><label for="pie"> pie</label>
+              <div class="nav-header">${_('chart type:') }</div>
+              <input type="radio" name="type" value="area"        id="area"  checked="checked"/><label for="area">${_('area') }</label>
+              <input type="radio" name="type" value="bar"         id="bar"                    /><label for="bar">${_('bar') }</label>
+              <input type="radio" name="type" value="line"        id="line"                   /><label for="line">${_('line') }</label>
+              <input type="radio" name="type" value="scatterplot" id="scatterplot"            /><label for="scatterplot">${_('scatter') }</label>
+              <input type="radio" name="type" value="pie"         id="pie"                    /><label for="pie"> ${_('pie') }</label>
             </div>
             <div class='chart_type_wrap value_type'>
-              <div class="nav-header">value type:</div>
-              <input type="radio" name="stacked" value="false"  /> <img src='/beeswax/static/css/images/charts/stack.png'> stack<br/>
-              <input type="radio" name="stacked" value="true" checked="checked" /> <img src='/beeswax/static/css/images/charts/value.png'> value<br/>
+              <div class="nav-header">${_('value type:') }</div>
+              <input type="radio" name="stacked" value="false"  /> <img src='/beeswax/static/css/images/charts/stack.png'> ${_('stack') }<br/>
+              <input type="radio" name="stacked" value="true" checked="checked" /> <img src='/beeswax/static/css/images/charts/value.png'> ${_('value') }<br/>
             </div>
             <div class='chart_type_wrap sort'>
-              <div class="nav-header">Sort:</div>
+              <div class="nav-header">${_('Sort:') }</div>
               <select name="sort" id="graph_sort">
                 <option value=''></option>
               </select>
             </div>
             <div class="chart_type_wrap direction">
-              <div class="nav-header">Direction:</div>
-              <input type="radio" name="direction" value="true" checked="checked" />  asc<br/>
-              <input type="radio" name="direction" value="false"  /> desc<br/>
+              <div class="nav-header">${_('Direction:') }</div>
+              <input type="radio" name="direction" value="true" checked="checked" />  ${_('asc') }<br/>
+              <input type="radio" name="direction" value="false"  /> ${_('desc') }<br/>
             </div>
 
             <input type="hidden" value='${download_urls["csv"]}' name="csv"/>
