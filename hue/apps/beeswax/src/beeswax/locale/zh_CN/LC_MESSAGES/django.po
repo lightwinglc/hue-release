@@ -1473,9 +1473,8 @@ msgstr "历史记录"
 
 #: src/beeswax/templates/list_designs.mako:35
 #: src/beeswax/templates/my_queries.mako:42
-#, fuzzy
 msgid "Edit the selected query"
-msgstr "编辑此查询。"
+msgstr "编辑此查询"
 
 #: src/beeswax/templates/list_designs.mako:35
 #: src/beeswax/templates/my_queries.mako:42
@@ -1485,7 +1484,7 @@ msgstr "编辑"
 #: src/beeswax/templates/list_designs.mako:36
 #: src/beeswax/templates/my_queries.mako:43
 msgid "Clone the selected query"
-msgstr ""
+msgstr "复制此查询"
 
 #: src/beeswax/templates/list_designs.mako:36
 #: src/beeswax/templates/list_history.mako:43
@@ -1495,21 +1494,18 @@ msgstr "克隆"
 
 #: src/beeswax/templates/list_designs.mako:37
 #: src/beeswax/templates/my_queries.mako:44
-#, fuzzy
 msgid "View the usage history of the selected query"
-msgstr "查看此查询的使用历史记录。"
+msgstr "查看此查询的使用历史记录"
 
 #: src/beeswax/templates/list_designs.mako:37
-#: src/beeswax/templates/my_queries.mako:44
-#, fuzzy
+#: src/beeswax/templates/my_queries.mako:46
 msgid "Usage history"
 msgstr "使用历史记录"
 
 #: src/beeswax/templates/list_designs.mako:38
 #: src/beeswax/templates/my_queries.mako:45
-#, fuzzy
 msgid "Delete the selected queries"
-msgstr "删除此查询。"
+msgstr "删除此查询"
 
 #: src/beeswax/templates/list_designs.mako:38
 #: src/beeswax/templates/my_queries.mako:45
@@ -1630,12 +1626,11 @@ msgstr "打开文件选择器"
 
 #: src/beeswax/templates/my_queries.mako:41
 msgid "View the result of the selected"
-msgstr ""
+msgstr "查看选中查询的结果"
 
-#: src/beeswax/templates/my_queries.mako:41
-#, fuzzy
+#: src/beeswax/templates/my_queries.mako:43
 msgid "View result"
-msgstr "保存查询结果"
+msgstr "查看结果"
 
 #: src/beeswax/templates/my_queries.mako:54
 msgid "Recent Saved Queries"
@@ -1879,4 +1874,5 @@ msgstr ""
 #: src/beeswax/templates/watch_wait.mako:31
 msgid "Waiting for query..."
 msgstr "等待查询..."
+
 
