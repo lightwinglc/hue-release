@@ -1875,4 +1875,59 @@ msgstr ""
 msgid "Waiting for query..."
 msgstr "等待查询..."
 
+#: src/beeswax/templates/databases.mako:23
+#: src/beeswax/templates/databases.mako:27
+msgid "Databases"
+msgstr "数据库"
 
+#: src/beeswax/templates/databases.mako:32
+msgid "Create a new database"
+msgstr "创建一个新数据库"
+
+#: src/beeswax/templates/databases.mako:39
+msgid "Search for database name"
+msgstr "搜索数据库"
+
+#: src/beeswax/templates/databases.mako:43
+msgid "Drop the selected databases"
+msgstr "卸载此数据库"
+
+#: src/beeswax/templates/databases.mako:50
+msgid "Database Name"
+msgstr "数据库名称"
+
+#: src/beeswax/templates/create_database.mako:51
+msgid "Create a database"
+msgstr "创建一个数据库"
+
+#: src/beeswax/templates/create_database.mako:56
+msgid "database_name"
+msgstr "数据库名称"
+
+#: src/beeswax/templates/create_database.mako:61
+msgid "Name of the new database. Database names must be globally unique. Database names tend to correspond to the directory where the data will be stored."
+msgstr "新数据库的名称。数据库名称必须是全局唯一的。数据库的名称倾向于符合数据将要存储的目录。"
+
+#: src/beeswax/templates/create_database.mako:73
+msgid "Use a database comment to describe the database. For example, note the data's provenance and any caveats users need to know."
+msgstr "使用一段说明来描述数据库。例如，指出数据的来源和用户需要知道的注意事项。"
+
+#: src/beeswax/templates/create_database.mako:82
+msgid "Choose Where Your Database's Data is Stored"
+msgstr "选择数据库的数据存储的地方"
+
+#: src/beeswax/templates/create_database.mako:44
+msgid "Step 2: Location"
+msgstr "第 2 步：位置"
+
+#: src/beeswax/templates/create_database.mako:94
+msgid "Store your database in the default location (controlled by Hive, and typically"
+msgstr "在默认位置存储数据库(由Hive控制，通常是"
+
+#: src/beeswax/templates/create_database.mako:120
+msgid "Create database"
+msgstr "创建数据库"
+
+#: src/beeswax/templates/create_database.mako:110
+msgid "Enter the path (on HDFS) to your database's data location."
+msgstr "输入数据库数据存储的路径（HDFS路径）"
