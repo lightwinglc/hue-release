@@ -1,0 +1,131 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-12-05 01:08+0800\n"
+"PO-Revision-Date: 2012-07-30 18:51-0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: src/pig/templates/edit_script.mako:70
+msgid "Settings"
+msgstr "设置"
+
+#: src/pig/templates/edit_script.mako:78
+msgid "Email notification"
+msgstr "电子邮件通知"
+
+#: src/pig/templates/edit_script.mako:85
+msgid "User-defined Functions"
+msgstr "用户自定义函数"
+
+#: src/pig/templates/edit_script.mako:108
+msgid "Upload UDF jar"
+msgstr ""
+
+#: src/pig/templates/edit_script.mako:122
+msgid "Title:"
+msgstr "标题："
+
+#: src/pig/templates/edit_script.mako:135
+msgid "Press ctrl+space for autocompletion"
+msgstr "按下ctrl+space自动完成"
+
+#: src/pig/templates/edit_script.mako:136
+msgid "To see table fields helper type table_name + \".\" (e.g. sample_07.)"
+msgstr "使用表字段帮助需要键入表名加点，如sample_07."
+
+#: src/pig/templates/edit_script.mako:147
+#: src/pig/templates/edit_script.mako:152
+msgid "Python UDF:"
+msgstr "Python用户自定义函数："
+
+#: src/pig/templates/my_scripts.mako:6
+msgid "My scripts"
+msgstr "我的脚本"
+
+#: src/pig/templates/my_scripts.mako:9
+msgid "New script"
+msgstr "新建脚本"
+
+#: src/pig/templates/my_scripts.mako:36
+msgid "No scripts yet"
+msgstr "没有脚本"
+
+#: src/pig/templates/my_scripts.mako:98
+msgid "title"
+msgstr "标题"
+
+#: src/pig/templates/my_scripts.mako:109
+msgid "Cancel"
+msgstr "退出"
+
+#: src/pig/templates/my_scripts.mako:111
+msgid "cBtnText"
+msgstr ""
+
+#: src/pig/templates/shared_components.mako:34
+msgid "My Scripts"
+msgstr "我的脚本"
+
+#: src/pig/templates/shared_components.mako:35
+msgid "Query history"
+msgstr "执行历史"
+
+#: src/pig/templates/edit_script.mako:365
+msgid "Did you know?"
+msgstr "您知道吗？"
+
+#: src/pig/templates/edit_script.mako:169
+msgid "Save"
+msgstr "保存"
+
+#: src/pig/templates/edit_script.mako:178
+msgid "Execute"
+msgstr "执行"
+
+#: src/pig/templates/edit_script.mako:181
+msgid "Explain"
+msgstr "解释"
+
+#: src/pig/templates/edit_script.mako:182
+msgid "Syntax check"
+msgstr "语法检查"
+
+#: src/pig/templates/edit_script.mako:130
+msgid "Pig script:"
+msgstr "Pig脚本："
+
+#: src/pig/templates/query_history.mako:18
+msgid "Date"
+msgstr "日期"
+
+#: src/pig/templates/query_history.mako:19
+msgid "Pig Script"
+msgstr "Pig脚本"
+
+#: src/pig/templates/query_history.mako:20
+msgid "Status"
+msgstr "状态"
+
+#: src/pig/templates/query_history.mako:21
+msgid "Logs"
+msgstr "日志"
+
+#: src/pig/templates/query_history.mako:22
+msgid "Results"
+msgstr "结果"
+
+#: src/pig/templates/query_history.mako:62
+msgid "Page"
+msgstr "页面"
+
+#: src/pig/templates/query_history.mako:62
+msgid "of"
+msgstr "/"

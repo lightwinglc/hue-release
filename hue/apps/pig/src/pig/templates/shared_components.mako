@@ -16,6 +16,10 @@
 ## under the License.
 
 <%!
+from django.utils.translation import ugettext as _
+%>
+
+<%!
 def is_selected(section, matcher):
   if section == matcher:
     return "active"
@@ -27,8 +31,8 @@ def is_selected(section, matcher):
   <div class="subnav subnav-fixed">
     <div class="container-fluid">
       <ul class="nav nav-pills">
-        <li class="${is_selected(section, 'My Scripts')}"><a href="${url('pig.views.index')}">My Scripts</a></li>        
-        <li class="${is_selected(section, 'Query history')}"><a href="${url('query_history')}">Query history</a></li>
+        <li class="${is_selected(section, 'My Scripts')}"><a href="${url('pig.views.index')}">${ _('My Scripts') }</a></li>
+        <li class="${is_selected(section, 'Query history')}"><a href="${url('query_history')}">${ _('Query history') }</a></li>
       </ul>
     </div>
   </div>

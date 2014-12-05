@@ -127,7 +127,7 @@ ${my_scripts.modal({
             </div>
 
             <label class="script_label" for="id_pig_script" >
-              <span>Pig script:</span>
+              <span>${_('Pig script:')}</span>
               <span>
                 <a href="javascript:void(0);" ><i class="icon-question-sign" id="help"></i></a>
                 <div id="help-content" class="hide">
@@ -166,7 +166,7 @@ ${my_scripts.modal({
 	          <br>
             <div class="actions">
 	            <input class="btn primary" type="submit" name="submit_action" id="save_button"
-                   value="Save"
+                   value="${_("Save")}"
                    % if result.get("id"):
                    disabled="disabled"
                    % endif
@@ -175,11 +175,11 @@ ${my_scripts.modal({
                 runningJob = result.get("job_id") and result.get("JOB_SUBMITTED")
                 hideaction = 'display:none;'
               %>
-	            <input class="btn primary action_btn" type="button" id="start_job" name="submit_action" value="Execute" style="${ hideaction if runningJob else ''}"/>
+	            <input class="btn primary action_btn" type="button" id="start_job" name="submit_action" value="${_("Execute")}" style="${ hideaction if runningJob else ''}"/>
               <input class="btn primary " type="button"id="kill_job"  value="Kill job" style="${ hideaction if not runningJob else ''}" />
               <img id="spinner" src="/static/art/spinner.gif" class="hide" />
-	            <input class="btn primary action_btn" type="button"id="explain" name="submit_action" value="Explain" style="${ hideaction if runningJob else ''}"/>
-	            <input class="btn primary action_btn" name="submit_action"type="button" value="Syntax check" id="syntax_check" style="${ hideaction if runningJob else ''}"/>
+	            <input class="btn primary action_btn" type="button"id="explain" name="submit_action" value="${_("Explain")}" style="${ hideaction if runningJob else ''}"/>
+	            <input class="btn primary action_btn" name="submit_action"type="button" value="${_("Syntax check")}" id="syntax_check" style="${ hideaction if runningJob else ''}"/>
 	          </div>
 	        </form>
           <input type="hidden" id="fakeArgs">
@@ -362,7 +362,7 @@ function get_job_result(job_id)
 $(document).ready(function(){
 
   $("#help").popover({
-    title: "${'Did you know?'}" +'<i class="icon-remove"></i>',
+    title: "${_('Did you know?')}" +'<i class="icon-remove"></i>',
     content: $("#help-content").html(),
     html: true,
     delay: { hide: 500 },

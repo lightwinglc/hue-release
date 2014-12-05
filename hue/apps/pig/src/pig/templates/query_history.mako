@@ -15,12 +15,12 @@ ${shared.menubar(section='Query history')}
 <table class="table table-bordered">
 <thead>
     <tr>
-      <th>Date</th>
-      <th>Pig Script</th>
-      <th>Status</th>
-      <th>Logs</th>
-      <th>Results</th>
-      <th>Delete</th>
+      <th>${_('Date')}</th>
+      <th>${_('Pig Script')}</th>
+      <th>${_('Status')}</th>
+      <th>${_('Logs')}</th>
+      <th>${_('Results')}</th>
+      <th>${_('Delete')}</th>
     </tr>
 </thead>
 <tbody>
@@ -59,7 +59,7 @@ ${shared.menubar(section='Query history')}
      % if jobs.has_previous():
      <li><a href="?page=${jobs.previous_page_number()}">previous</a></li>
      % endif
-     <li class="active"><span>Page ${jobs.number } of ${jobs.paginator.num_pages}.</span></li>
+     <li class="active"><span>${_('Page')} ${jobs.number } ${_('of')} ${jobs.paginator.num_pages}.</span></li>
      
      % if jobs.has_next():
      <li><a href="?page=${jobs.next_page_number()}">next</a></li>
