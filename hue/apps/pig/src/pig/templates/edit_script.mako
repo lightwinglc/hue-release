@@ -176,7 +176,7 @@ ${my_scripts.modal({
                 hideaction = 'display:none;'
               %>
 	            <input class="btn primary action_btn" type="button" id="start_job" name="submit_action" value="${_("Execute")}" style="${ hideaction if runningJob else ''}"/>
-              <input class="btn primary " type="button"id="kill_job"  value="Kill job" style="${ hideaction if not runningJob else ''}" />
+              <input class="btn primary " type="button"id="kill_job"  value="${_("Kill job")}" style="${ hideaction if not runningJob else ''}" />
               <img id="spinner" src="/static/art/spinner.gif" class="hide" />
 	            <input class="btn primary action_btn" type="button"id="explain" name="submit_action" value="${_("Explain")}" style="${ hideaction if runningJob else ''}"/>
 	            <input class="btn primary action_btn" name="submit_action"type="button" value="${_("Syntax check")}" id="syntax_check" style="${ hideaction if runningJob else ''}"/>
@@ -335,7 +335,7 @@ function get_job_result(job_id)
         //var stdout = escape(data.stdout).replace(/\n/g, "<br>");
         //stdout = stdout.replace(/\s/g, "&nbsp;");
         $('#accordion2').removeClass('hide');
-        $("#job_logs").text("Logs...");
+        $("#job_logs").text("${_("Logs...")}");
         $("#log_info").text(data.error);
         $("#job_info_outer").removeClass('hide');
         $("#job_info").text($('<div/>').text(data.stdout).html());

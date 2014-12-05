@@ -129,3 +129,11 @@ msgstr "页面"
 #: src/pig/templates/query_history.mako:62
 msgid "of"
 msgstr "/"
+
+#: src/pig/templates/edit_script.mako:179
+msgid "Kill job"
+msgstr "中止任务"
+
+#: src/pig/templates/edit_script.mako:338
+msgid "Logs..."
+msgstr "日志..."
