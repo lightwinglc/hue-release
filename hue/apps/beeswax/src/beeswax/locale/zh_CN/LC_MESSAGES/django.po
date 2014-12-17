@@ -387,6 +387,9 @@ msgstr "保存的设计 \"%(name)s\""
 msgid "Delete design?"
 msgstr "删除设计？"
 
+msgid "Delete design(s)?"
+msgstr "删除选中项？"
+
 #: src/beeswax/views.py:161
 #, python-format
 msgid "Copied design: %(name)s"
