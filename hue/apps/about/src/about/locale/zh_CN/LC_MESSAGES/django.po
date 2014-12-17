@@ -33,3 +33,11 @@ msgstr "检查错误配置"
 msgid "Server Logs"
 msgstr "服务器日志"
 
+#: src/about/templates/index.mako:70
+msgid "Component"
+msgstr "组件"
+
+#: src/about/templates/index.mako:71
+msgid "Version"
+msgstr "版本"
+

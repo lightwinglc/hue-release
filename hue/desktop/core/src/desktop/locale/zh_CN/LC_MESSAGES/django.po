@@ -821,3 +821,14 @@ msgstr "以 zip 格式下载整个日志"
 msgid "Go back"
 msgstr "返回"
 
+msgid "Prev record"
+msgstr "上一条"
+
+msgid "Next record"
+msgstr "下一条"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "of"
+msgstr "/"

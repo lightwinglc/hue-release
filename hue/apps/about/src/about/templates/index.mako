@@ -67,8 +67,8 @@ ${commonheader(_('About ' + page_title), "about", user, "100px")| n,unicode}
 			<table class="table table-bordered">
 			<thead>
     		<tr>
-      			<th>Component</th>
-      			<th colspan="2">Version</th>
+      			<th>${_('Component')}</th>
+      			<th colspan="2">${_('Version')}</th>
     		</tr>
 			</thead>
 			<tbody>
@@ -134,7 +134,7 @@ ${commonheader(_('About ' + page_title), "about", user, "100px")| n,unicode}
     .logo {
         float: left;
         height: 78px;
-        width: 140px;
+        width: 199px;
     }
     .copyright {
         text-align: right;

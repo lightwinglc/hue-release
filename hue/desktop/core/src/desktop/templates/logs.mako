@@ -72,11 +72,11 @@ ${layout.menubar(section='log_view')}
     <%def name="search()">
         <input type="text" class="input-xxlarge search-query" placeholder="${_('Search...')}" value="${query}">
           <div class="btn-group search-handle">
-            <input type="button" class="prev btn btn-mini disabled" value="Prev"></input>
-            <input type="button" class="next btn btn-mini disabled" value="Next"></input>
+            <input type="button" class="prev btn btn-mini disabled" value=${_("Prev record")}></input>
+            <input type="button" class="next btn btn-mini disabled" value=${_("Next record")}></input>
           </div>
-        <input type="button" class="update btn btn-mini" value="Update"></input>
-        <span class="search-info help-inline"><span class="cur"></span> of <span class="com"></span></span>
+        <input type="button" class="update btn btn-mini" value=${_("Update")}></input>
+        <span class="search-info help-inline"><span class="cur"></span> ${_('of')} <span class="com"></span></span>
     </%def>
     <%def name="creation()">
         <span class="btn-group">
