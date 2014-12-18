@@ -123,11 +123,11 @@ from django.utils.translation import ugettext as _
         <thead>
             <tr>
                 <th width="1%"><div data-bind="click: selectAll, css: {hueCheckbox: true, 'icon-ok': allSelected}"></div></th>
-                <th class="sortable sorting" data-sort="type" width="4%" data-bind="click: sort">Type</th>
+                <th class="sortable sorting" data-sort="type" width="6%" data-bind="click: sort">${_('Type')}</th>
                 <th class="sortable sorting" data-sort="name" data-bind="click: sort">${_('Name')}</th>
                 <th class="sortable sorting" data-sort="size" width="10%" data-bind="click: sort">${_('Size')}</th>
-                <th class="sortable sorting" data-sort="user" width="10%" data-bind="click: sort">${_('User')}</th>
-                <th class="sortable sorting" data-sort="group" width="10%" data-bind="click: sort">${_('Group')}</th>
+                <th class="sortable sorting" data-sort="user" width="9%" data-bind="click: sort">${_('User')}</th>
+                <th class="sortable sorting" data-sort="group" width="9%" data-bind="click: sort">${_('Group')}</th>
                 <th width="10%">${_('Permissions')}</th>
                 <th class="sortable sorting" data-sort="mtime" width="15%" data-bind="click: sort">${_('Date')}</th>
             </tr>

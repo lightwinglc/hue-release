@@ -540,7 +540,7 @@ msgstr "存档"
 
 #: src/filebrowser/templates/listdir.mako:57
 msgid "Zip file"
-msgstr ""
+msgstr "Zip 文件"
 
 #: src/filebrowser/templates/listdir.mako:62
 msgid "New"
@@ -777,3 +777,6 @@ msgstr "确认恢复"
 
 msgid "Are you sure you want to restore these files?"
 msgstr "您确认要恢复这些文件吗？"
+
+msgid "Type"
+msgstr "类型"
