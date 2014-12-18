@@ -237,7 +237,7 @@ class CreateTableForm(DependencyAwareForm):
 
   # External?
   use_default_location = forms.BooleanField(required=False, initial=True, label=_t("Use default location"))
-  external_location = forms.CharField(required=False, help_text=_t("Path to HDFS directory or file of table data."))
+  external_location = forms.CharField(label=_t("External location"), required=False, help_text=_t("Path to HDFS directory or file of table data."))
 
   dependencies += [
     ("use_default_location", False, "external_location")
@@ -399,7 +399,7 @@ class CreateDatabaseForm(DependencyAwareForm):
 
   # External if not true
   use_default_location = forms.BooleanField(required=False, initial=True, label=_t("Use default location"))
-  external_location = forms.CharField(required=False, help_text=_t("Path to HDFS directory or file of database data."))
+  external_location = forms.CharField(label=_t("External location"), required=False, help_text=_t("Path to HDFS directory or file of database data."))
 
   dependencies += [
     ("use_default_location", False, "external_location")

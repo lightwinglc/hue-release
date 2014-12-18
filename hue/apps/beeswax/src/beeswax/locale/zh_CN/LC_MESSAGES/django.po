@@ -1934,3 +1934,6 @@ msgstr "创建数据库"
 #: src/beeswax/templates/create_database.mako:110
 msgid "Enter the path (on HDFS) to your database's data location."
 msgstr "输入数据库数据存储的路径（HDFS路径）"
+
+msgid "External location"
+msgstr "外部位置"
