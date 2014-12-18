@@ -19,6 +19,10 @@
     from django.utils.translation import ugettext as _
 %>
 
+<%
+    choosefilebtn = _('Choose a file')
+%>
+
 <%namespace name="comps" file="beeswax_components.mako" />
 <%namespace name="layout" file="layout.mako" />
 ${ commonheader(_("HCatalog: Create a new table from a file"), app_name, user, '100px') | n,unicode }
@@ -544,7 +548,7 @@ $(document).ready(function () {
     });
 
     $(".fileChooserBtn").addClass("btn-primary disable-feedback");
-    $(".fileChooserBtn").text("Choose a file");
+    $(".fileChooserBtn").text("${choosefilebtn}");
     $(".fileChooserBtn").click(function (e) {
         e.preventDefault();
         var _destination = $(this).attr("data-filechooser-destination");

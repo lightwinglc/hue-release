@@ -330,7 +330,7 @@ ${layout.menubar(section='tables')}
         <div class="hide">
             ${unicode(partitions_form.management_form) | n}
         </div>
-        <button class="btn addPartitionBtn" value="True" name="partitions-add"
+        <button class="btn addPartitionBtn" value="True" name="partitions-add" disabled="disabled"
                 type="submit">${_('Add a partition')}</button>
     </fieldset>
 </div>

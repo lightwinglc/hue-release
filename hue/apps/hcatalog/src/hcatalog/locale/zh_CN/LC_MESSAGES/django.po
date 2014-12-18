@@ -1,0 +1,1087 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-17 23:38+0800\n"
+"PO-Revision-Date: 2014-12-17 23:38+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: src/hcatalog/views.py:171
+msgid "Do you really want to delete the database(s)?"
+msgstr "您真的要删除指定的数据库吗？"
+
+#: src/hcatalog/views.py:188
+msgid "Do you really want to delete the table(s)?"
+msgstr "您真的要删除指定的表吗？"
+
+#: src/hcatalog/views.py:408
+msgid "Could not read table"
+msgstr "无法读表"
+
+#: src/hcatalog/templates/beeswax_components.mako:199
+#: src/hcatalog/templates/create_table_from_file.mako:253
+#: src/hcatalog/templates/create_table_from_file.mako:254
+#: src/hcatalog/templates/watch_results.mako:172
+msgid "Beginning of List"
+msgstr "列表开始"
+
+#: src/hcatalog/templates/beeswax_components.mako:200
+msgid "Previous Page"
+msgstr "上一页"
+
+#: src/hcatalog/templates/beeswax_components.mako:201
+#: src/hcatalog/templates/create_table_from_file.mako:256
+#: src/hcatalog/templates/watch_results.mako:175
+msgid "Next page"
+msgstr "下一页"
+
+#: src/hcatalog/templates/beeswax_components.mako:201
+#: src/hcatalog/templates/create_table_from_file.mako:257
+#: src/hcatalog/templates/watch_results.mako:175
+msgid "Next Page"
+msgstr "下一页"
+
+#: src/hcatalog/templates/beeswax_components.mako:202
+msgid "End of List"
+msgstr "列表结束"
+
+#: src/hcatalog/templates/beeswax_components.mako:204
+#, python-format
+msgid ""
+"Showing %(start)s to %(end)s of %(count)s items, page %(page)s of "
+"%(pages)s"
+msgstr ""
+
+#: src/hcatalog/templates/beeswax_layout.mako:35
+#: src/hcatalog/templates/execute.mako:211
+#: src/hcatalog/templates/execute.mako:216
+msgid "Query Editor"
+msgstr "查询编辑器"
+
+#: src/hcatalog/templates/beeswax_layout.mako:36
+msgid "My Queries"
+msgstr "我的查询"
+
+#: src/hcatalog/templates/beeswax_layout.mako:37
+msgid "Saved Queries"
+msgstr "保存的查询"
+
+#: src/hcatalog/templates/beeswax_layout.mako:38
+msgid "History"
+msgstr "历史"
+
+#: src/hcatalog/templates/beeswax_layout.mako:39
+#: src/hcatalog/templates/layout.mako:36
+msgid "Tables"
+msgstr "表"
+
+#: src/hcatalog/templates/beeswax_layout.mako:40
+msgid "Settings"
+msgstr "设置"
+
+#: src/hcatalog/templates/create_database.mako:25
+msgid "HCatalog: Create a new database"
+msgstr "HCatalog: 创建新数据库"
+
+#: src/hcatalog/templates/create_database.mako:38
+#: src/hcatalog/templates/create_table_from_file.mako:51
+#: src/hcatalog/templates/create_table_manually.mako:46
+#: src/hcatalog/templates/show_databases.mako:35
+#: src/hcatalog/templates/show_tables.mako:48
+msgid "Actions"
+msgstr "动作"
+
+#: src/hcatalog/templates/create_database.mako:39
+#: src/hcatalog/templates/show_databases.mako:37
+msgid "Create a new database"
+msgstr "创建新数据库"
+
+#: src/hcatalog/templates/create_database.mako:54
+#: src/hcatalog/templates/create_table_manually.mako:65
+msgid "Step 1: Name"
+msgstr "第一步：名字"
+
+#: src/hcatalog/templates/create_database.mako:55
+msgid "Step 2: Location"
+msgstr "第二步：位置"
+
+#: src/hcatalog/templates/create_database.mako:64
+msgid "Create a database"
+msgstr "创建数据库"
+
+#: src/hcatalog/templates/create_database.mako:64
+#: src/hcatalog/templates/create_table_manually.mako:79
+msgid "Let's start with a name and description for where we'll store your data."
+msgstr "让我们从数据存储位置的名称和描述开始。"
+
+#: src/hcatalog/templates/create_database.mako:70
+msgid "database_name"
+msgstr "数据库名"
+
+#: src/hcatalog/templates/create_database.mako:73
+#: src/hcatalog/templates/create_table_from_file.mako:80
+#: src/hcatalog/templates/create_table_manually.mako:88
+#: src/hcatalog/templates/create_table_manually.mako:196
+#: src/hcatalog/templates/create_table_manually.mako:247
+#: src/hcatalog/templates/create_table_manually.mako:260
+#: src/hcatalog/templates/create_table_manually.mako:366
+#: src/hcatalog/templates/file_import_preview_table.mako:37
+msgid "This field is required. Spaces are not allowed."
+msgstr "必填项，不能留空。"
+
+#: src/hcatalog/templates/create_database.mako:76
+msgid ""
+"Name of the new database. Database names must be globally unique. "
+"Database names tend to correspond as well to the directory where the data"
+" will be stored."
+msgstr "新数据库的名称。数据库名称必须是全局唯一的。数据库的名称倾向于符合数据将要存储的目录。"
+
+#: src/hcatalog/templates/create_database.mako:84
+#: src/hcatalog/templates/create_table_from_file.mako:89
+#: src/hcatalog/templates/create_table_manually.mako:99
+msgid "Optional"
+msgstr "可选的"
+
+#: src/hcatalog/templates/create_database.mako:88
+msgid ""
+"Use a database comment to describe your database. For example, you might "
+"note the data's provenance and any caveats users need to know."
+msgstr "使用一段说明来描述数据库。例如，指出数据的来源和用户需要知道的注意事项。"
+
+#: src/hcatalog/templates/create_database.mako:97
+msgid "Choose Where Your Database's Data is Stored"
+msgstr "选择数据库的数据存储的地方"
+
+#: src/hcatalog/templates/create_database.mako:100
+#: src/hcatalog/templates/create_table_manually.mako:275
+msgid "Location"
+msgstr "位置"
+
+#: src/hcatalog/templates/create_database.mako:107
+#: src/hcatalog/templates/create_table_manually.mako:282
+msgid "Use default location"
+msgstr "使用默认位置"
+
+#: src/hcatalog/templates/create_database.mako:110
+msgid "Store your database in the default location (controlled by Hive, and typically"
+msgstr "在默认位置存储数据库(由Hive控制，通常是"
+
+#: src/hcatalog/templates/create_database.mako:124
+#: src/hcatalog/templates/create_table_manually.mako:209
+msgid "This field is required."
+msgstr "此字段为必填字段。"
+
+#: src/hcatalog/templates/create_database.mako:126
+msgid "Enter the path (on HDFS) to your database's data location"
+msgstr "输入数据库数据存储的路径（HDFS路径）"
+
+#: src/hcatalog/templates/create_database.mako:134
+#: src/hcatalog/templates/create_table_manually.mako:339
+msgid "Back"
+msgstr "返回"
+
+#: src/hcatalog/templates/create_database.mako:135
+#: src/hcatalog/templates/create_table_manually.mako:340
+msgid "Next"
+msgstr "下一页"
+
+#: src/hcatalog/templates/create_database.mako:137
+msgid "Create database"
+msgstr "创建数据库"
+
+#: src/hcatalog/templates/create_database.mako:149
+#: src/hcatalog/templates/create_table_from_file.mako:280
+#: src/hcatalog/templates/create_table_manually.mako:434
+#: src/hcatalog/templates/execute.mako:261
+msgid "Choose a file"
+msgstr "选择文件"
+
+#: src/hcatalog/templates/create_table_from_file.mako:24
+msgid "HCatalog: Create a new table from a file"
+msgstr "HCatalog: 从文件中创建表"
+
+#: src/hcatalog/templates/create_table_from_file.mako:28
+#: src/hcatalog/templates/create_table_from_file.mako:53
+#: src/hcatalog/templates/create_table_manually.mako:48
+#: src/hcatalog/templates/show_tables.mako:50
+msgid "Create a new table from a file"
+msgstr "从文件中创建表"
+
+#: src/hcatalog/templates/create_table_from_file.mako:30
+msgid "Creating the table..."
+msgstr "创建表..."
+
+#: src/hcatalog/templates/create_table_from_file.mako:32
+msgid "Importing data into the table..."
+msgstr "向表中导入数据..."
+
+#: src/hcatalog/templates/create_table_from_file.mako:35
+msgid "Processing the file to preview..."
+msgstr "处理文件预览..."
+
+#: src/hcatalog/templates/create_table_from_file.mako:42
+#: src/hcatalog/templates/create_table_manually.mako:37
+#: src/hcatalog/templates/execute.mako:67
+#: src/hcatalog/templates/show_tables.mako:39
+msgid "database"
+msgstr "数据库"
+
+#: src/hcatalog/templates/create_table_from_file.mako:56
+#: src/hcatalog/templates/create_table_manually.mako:28
+#: src/hcatalog/templates/create_table_manually.mako:50
+#: src/hcatalog/templates/show_tables.mako:53
+msgid "Create a new table manually"
+msgstr "手工创建表"
+
+#: src/hcatalog/templates/create_table_from_file.mako:71
+msgid "Table options"
+msgstr "表选项"
+
+#: src/hcatalog/templates/create_table_from_file.mako:79
+#: src/hcatalog/templates/create_table_manually.mako:85
+msgid "table_name"
+msgstr "表名"
+
+#: src/hcatalog/templates/create_table_from_file.mako:81
+msgid "Table with this name already exists. Table names must be globally unique."
+msgstr "已有同名表存在。表名必须全局唯一。"
+
+#: src/hcatalog/templates/create_table_from_file.mako:96
+msgid "File options"
+msgstr "文件选项"
+
+#: src/hcatalog/templates/create_table_from_file.mako:108
+msgid "This field is required. Select path to the file on HDFS."
+msgstr "这个字段是必要的。请选择HDFS上的文件路径。"
+
+#: src/hcatalog/templates/create_table_from_file.mako:147
+#: src/hcatalog/templates/create_table_from_file.mako:174
+#: src/hcatalog/templates/create_table_manually.mako:159
+#: src/hcatalog/templates/create_table_manually.mako:169
+#: src/hcatalog/templates/create_table_manually.mako:179
+msgid ""
+"This field is required. Spaces are not allowed. Terminator must be "
+"exactly one character."
+msgstr "此字段必填，不允许留空。终结符必须严格为一个字符。"
+
+#: src/hcatalog/templates/create_table_from_file.mako:225
+msgid "e.g. A1:D30"
+msgstr "例如 A1:D30"
+
+#: src/hcatalog/templates/create_table_from_file.mako:226
+msgid ""
+"Cell range must be in excel format (e.g. A1:D30). You could leave this "
+"parameter empty to match all cells."
+msgstr ""
+
+#: src/hcatalog/templates/create_table_from_file.mako:249
+msgid "Table preview"
+msgstr "表预览"
+
+#: src/hcatalog/templates/create_table_from_file.mako:268
+#: src/hcatalog/templates/create_table_manually.mako:341
+msgid "Create table"
+msgstr "创建表"
+
+#: src/hcatalog/templates/create_table_from_file.mako:498
+#: src/hcatalog/templates/watch_results.mako:260
+msgid "No data available"
+msgstr "没有数据可用"
+
+#: src/hcatalog/templates/create_table_from_file.mako:499
+#: src/hcatalog/templates/show_databases.mako:236
+#: src/hcatalog/templates/show_tables.mako:255
+#: src/hcatalog/templates/watch_results.mako:261
+msgid "No matching records"
+msgstr "没有匹配的记录"
+
+#: src/hcatalog/templates/create_table_from_file.mako:695
+#: src/hcatalog/templates/create_table_from_file.mako:731
+msgid "type here"
+msgstr "在这里键入"
+
+#: src/hcatalog/templates/create_table_manually.mako:24
+msgid "HCatalog: Create a new table manually"
+msgstr "HCatalog: 手工创建新表"
+
+#: src/hcatalog/templates/create_table_manually.mako:30
+msgid "Creating a table..."
+msgstr "创建表..."
+
+#: src/hcatalog/templates/create_table_manually.mako:66
+msgid "Step 2: Record Format"
+msgstr "第2步：记录格式"
+
+#: src/hcatalog/templates/create_table_manually.mako:67
+msgid "Step 3: Serialization"
+msgstr "第3步：序列化"
+
+#: src/hcatalog/templates/create_table_manually.mako:68
+msgid "Step 4: File Format"
+msgstr "第4步：文件格式"
+
+#: src/hcatalog/templates/create_table_manually.mako:69
+msgid "Step 5: Location"
+msgstr "第5步：位置"
+
+#: src/hcatalog/templates/create_table_manually.mako:70
+msgid "Step 6: Columns"
+msgstr "第6步：列"
+
+#: src/hcatalog/templates/create_table_manually.mako:79
+msgid "Create a table"
+msgstr "创建表"
+
+#: src/hcatalog/templates/create_table_manually.mako:91
+msgid ""
+"Name of the new table. Table names must be globally unique. Table names "
+"tend to correspond as well to the directory where the data will be "
+"stored."
+msgstr "新表的名称。表名必须具有全局唯一性。表名应与将存储数据的目录对应。"
+
+#: src/hcatalog/templates/create_table_manually.mako:103
+msgid ""
+"Use a table comment to describe your table.  For example, you might note "
+"the data's provenance and any caveats users need to know."
+msgstr "使用表备注描述您的表。例如，您可以注释数据的出处以及用户需要了解的注意事项。"
+
+#: src/hcatalog/templates/create_table_manually.mako:112
+msgid "Choose Your Record Format"
+msgstr "选择您的记录格式"
+
+#: src/hcatalog/templates/create_table_manually.mako:113
+msgid ""
+"Individual records are broken up into columns either with delimiters "
+"(e.g., CSV or TSV) or using a specific serialization / deserialization "
+"(SerDe) implementation. (One common specialized SerDe is for parsing out "
+"columns with a regular expression.)"
+msgstr ""
+"单独的记录将使用分隔符（例如，CSV 或 TSV）或使用特定的序列化/反序列化 (SerDe) 实施分割为多个列。（一个常见的专用 SerDe "
+"是使用正则表达式解析列。）"
+
+#: src/hcatalog/templates/create_table_manually.mako:119
+msgid "Record format"
+msgstr "记录格式"
+
+#: src/hcatalog/templates/create_table_manually.mako:128
+msgid "Delimited"
+msgstr "已分隔"
+
+#: src/hcatalog/templates/create_table_manually.mako:130
+msgid "(Data files use delimiters, like commas (CSV) or tabs.)"
+msgstr "（数据文件使用分隔符，如逗号 (CSV) 或制表符。）"
+
+#: src/hcatalog/templates/create_table_manually.mako:139
+msgid "SerDe"
+msgstr "SerDe"
+
+#: src/hcatalog/templates/create_table_manually.mako:141
+msgid "(Enter a specialized serialization implementation.)"
+msgstr "（输入一个专用的序列化实施。）"
+
+#: src/hcatalog/templates/create_table_manually.mako:152
+#: src/hcatalog/templates/create_table_manually.mako:187
+msgid "Configure Record Serialization"
+msgstr "配置记录序列"
+
+#: src/hcatalog/templates/create_table_manually.mako:153
+msgid "Only supports single-character delimiters."
+msgstr "仅支持单字符分隔符。"
+
+#: src/hcatalog/templates/create_table_manually.mako:161
+msgid ""
+"Enter the column delimiter. Must be a single character. Use syntax like "
+"\"\\001\" or \"\t\" for special characters."
+msgstr "输入列分隔符。必须是单个字符。对于特殊字符，请使用 \"\" 或 \"\t\" 等语法。"
+
+#: src/hcatalog/templates/create_table_manually.mako:171
+msgid "Use for array types."
+msgstr "用于数组类型。"
+
+#: src/hcatalog/templates/create_table_manually.mako:181
+msgid "Use for map types."
+msgstr "用于 map 类型。"
+
+#: src/hcatalog/templates/create_table_manually.mako:198
+msgid "The Java class name of your SerDe."
+msgstr "您的 SerDe 的 Java 类名。"
+
+#: src/hcatalog/templates/create_table_manually.mako:198
+#: src/hcatalog/templates/create_table_manually.mako:211
+#: src/hcatalog/templates/create_table_manually.mako:324
+msgid "e.g."
+msgstr "例如"
+
+#: src/hcatalog/templates/create_table_manually.mako:211
+msgid "Properties to pass to the (de)serialization mechanism."
+msgstr "要传递给（反）序列化机制的属性。"
+
+#: src/hcatalog/templates/create_table_manually.mako:221
+msgid "Choose a File Format"
+msgstr "选择文件格式"
+
+#: src/hcatalog/templates/create_table_manually.mako:222
+#: src/hcatalog/templates/create_table_manually.mako:223
+#: src/hcatalog/templates/create_table_manually.mako:224
+msgid "Use"
+msgstr "使用"
+
+#: src/hcatalog/templates/create_table_manually.mako:222
+msgid "for newline-delimited text files."
+msgstr "用于换行分隔的文本文件。"
+
+#: src/hcatalog/templates/create_table_manually.mako:223
+msgid "for Hadoop's binary serialization format."
+msgstr "用于 Hadoop 的二进制序列化格式。"
+
+#: src/hcatalog/templates/create_table_manually.mako:224
+msgid "to choose a custom implementation."
+msgstr "以选择自定义实现。"
+
+#: src/hcatalog/templates/create_table_manually.mako:229
+msgid "File format"
+msgstr "文件格式"
+
+#: src/hcatalog/templates/create_table_manually.mako:249
+msgid "Java class used to read data"
+msgstr "用于读取数据的 Java 类"
+
+#: src/hcatalog/templates/create_table_manually.mako:262
+msgid "Java class used to write data"
+msgstr "用于写入数据的 Java 类"
+
+#: src/hcatalog/templates/create_table_manually.mako:272
+msgid "Choose Where Your Table's Data is Stored"
+msgstr "选择表数据的存储位置"
+
+#: src/hcatalog/templates/create_table_manually.mako:285
+msgid ""
+"Store your table in the default location (controlled by Hive, and "
+"typically"
+msgstr "将表存储在默认位置（由 Hive 控制，通常"
+
+#: src/hcatalog/templates/create_table_manually.mako:300
+msgid "Enter the path (on HDFS) to your table's data location"
+msgstr "输入表数据位置的路径（HDFS 上）"
+
+#: src/hcatalog/templates/create_table_manually.mako:309
+msgid "Configure Table Columns"
+msgstr "配置表列"
+
+#: src/hcatalog/templates/create_table_manually.mako:317
+msgid "Add a column"
+msgstr "添加一列"
+
+#: src/hcatalog/templates/create_table_manually.mako:321
+msgid "Configure Partitions"
+msgstr "配置分区"
+
+#: src/hcatalog/templates/create_table_manually.mako:322
+msgid ""
+"If your data is naturally partitioned (by date, for example), partitions "
+"are a way to tell the query server that data for a specific partition "
+"value are stored together."
+msgstr "如果您的数据本身已分区（例如，按日期），则分区是一种告诉查询服务器特定分区值的数据将存储在一起的方式。"
+
+#: src/hcatalog/templates/create_table_manually.mako:323
+msgid "The query server establishes a mapping between directories on disk"
+msgstr "查询服务器在磁盘上的目录之间建立 mapping"
+
+#: src/hcatalog/templates/create_table_manually.mako:325
+msgid ""
+"and the data for that day.  Partitions are virtual columns; they are not "
+"represented in the data itself, but are determined by the data location. "
+"The query server implements query optimizations such that queries that "
+"are specific to a single partition need not read the data in other "
+"partitions."
+msgstr "以及该日的数据。分区是虚拟列；数据本身中并不反映分区，而是由数据位置决定。查询服务器实施查询优化，以使特定于单个分区的查询不需要读取其他分区中的数据。"
+
+#: src/hcatalog/templates/create_table_manually.mako:334
+msgid "Add a partition"
+msgstr "添加一个分区"
+
+#: src/hcatalog/templates/create_table_manually.mako:356
+msgid "Delete this column"
+msgstr "删除此列"
+
+#: src/hcatalog/templates/create_table_manually.mako:361
+#: src/hcatalog/templates/file_import_preview_table.mako:35
+msgid "Column name"
+msgstr "列名"
+
+#: src/hcatalog/templates/create_table_manually.mako:365
+msgid "Column Name"
+msgstr "列名称"
+
+#: src/hcatalog/templates/create_table_manually.mako:367
+msgid "There is another field with the same name."
+msgstr "另一个字段具有相同名称。"
+
+#: src/hcatalog/templates/create_table_manually.mako:369
+msgid "Column name must be single words that start with a letter or a digit."
+msgstr "列名称必须是以字母或数字开始的单个单词。"
+
+#: src/hcatalog/templates/create_table_manually.mako:374
+msgid "Column type"
+msgstr "列类型"
+
+#: src/hcatalog/templates/create_table_manually.mako:381
+msgid ""
+"Type for this column. Certain advanced types (namely, structs) are not "
+"exposed in this interface."
+msgstr "此列的类型。某些高级类型（即 structs）不会在此界面中显示。"
+
+#: src/hcatalog/templates/create_table_manually.mako:388
+msgid "Array value type"
+msgstr "数组值类型"
+
+#: src/hcatalog/templates/create_table_manually.mako:393
+msgid "Type of the array values."
+msgstr "数组值的类型。"
+
+#: src/hcatalog/templates/create_table_manually.mako:400
+msgid "Map Key type"
+msgstr "Map 键类型"
+
+#: src/hcatalog/templates/create_table_manually.mako:405
+msgid "Type of the map keys."
+msgstr "Map 键的类型。"
+
+#: src/hcatalog/templates/create_table_manually.mako:410
+msgid "Map Value type"
+msgstr "Map 值类型"
+
+#: src/hcatalog/templates/create_table_manually.mako:415
+msgid "Type of the map values."
+msgstr "Map 值的类型。"
+
+#: src/hcatalog/templates/create_table_manually.mako:557
+msgid "Type your field terminator here"
+msgstr "此处输入您的字段终止符"
+
+#: src/hcatalog/templates/create_table_manually.mako:567
+msgid "Type your collection terminator here"
+msgstr "此处输入您的集合终止符"
+
+#: src/hcatalog/templates/create_table_manually.mako:577
+msgid "Type your map key terminator here"
+msgstr "此处输入您的 Map 键终止符"
+
+#: src/hcatalog/templates/database_list.mako:29
+msgid "Database Name"
+msgstr "数据库名称"
+
+#: src/hcatalog/templates/describe_table.mako:28
+msgid "Table"
+msgstr "表"
+
+#: src/hcatalog/templates/describe_table.mako:37
+#, python-format
+msgid "HCatalog %s Metadata: %s"
+msgstr "HCatalog %s 元数据: %s"
+
+#: src/hcatalog/templates/describe_table.mako:44
+#: src/hcatalog/templates/execute.mako:279
+#: src/hcatalog/templates/watch_results.mako:194
+msgid "Name"
+msgstr "名称"
+
+#: src/hcatalog/templates/describe_table.mako:45
+msgid "Type"
+msgstr "类型"
+
+#: src/hcatalog/templates/describe_table.mako:46
+msgid "Comment"
+msgstr "备注"
+
+#: src/hcatalog/templates/describe_table.mako:67
+msgid "HCatalog Table Metadata:"
+msgstr "HCatalog 表元数据："
+
+#: src/hcatalog/templates/describe_table.mako:68
+msgid "Getting the partition location..."
+msgstr "获取分区位置..."
+
+#: src/hcatalog/templates/describe_table.mako:69
+msgid "Dropping the table..."
+msgstr "删除表..."
+
+#: src/hcatalog/templates/describe_table.mako:70
+msgid "Dropping the table partition..."
+msgstr "删除表分区..."
+
+#: src/hcatalog/templates/describe_table.mako:71
+msgid "Importing data..."
+msgstr "导入数据..."
+
+#: src/hcatalog/templates/describe_table.mako:89
+#: src/hcatalog/templates/watch_results.mako:128
+msgid "Columns"
+msgstr "列"
+
+#: src/hcatalog/templates/describe_table.mako:91
+msgid "Partition Columns"
+msgstr "分区列"
+
+#: src/hcatalog/templates/describe_table.mako:94
+#: src/hcatalog/templates/describe_table.mako:112
+msgid "Partitions"
+msgstr "分区"
+
+#: src/hcatalog/templates/describe_table.mako:120
+msgid "Browse"
+msgstr "浏览"
+
+#: src/hcatalog/templates/describe_table.mako:141
+#: src/hcatalog/templates/show_databases.mako:72
+#: src/hcatalog/templates/show_tables.mako:88
+msgid "Confirm action"
+msgstr "确认操作"
+
+#: src/hcatalog/templates/describe_table.mako:144
+#: src/hcatalog/templates/execute.mako:293
+#: src/hcatalog/templates/show_databases.mako:75
+#: src/hcatalog/templates/show_tables.mako:91
+#: src/hcatalog/templates/watch_results.mako:241
+msgid "Cancel"
+msgstr "取消"
+
+#: src/hcatalog/templates/describe_table.mako:145
+#: src/hcatalog/templates/show_databases.mako:76
+#: src/hcatalog/templates/show_tables.mako:92
+msgid "Yes"
+msgstr "是"
+
+#: src/hcatalog/templates/execute.mako:27
+#: src/hcatalog/templates/execute.mako:222
+#: src/hcatalog/templates/watch_results.mako:125
+#: src/hcatalog/templates/watch_wait.mako:55
+msgid "Query"
+msgstr "查询"
+
+#: src/hcatalog/templates/execute.mako:33
+msgid "Your query has the following error(s):"
+msgstr "您的查询有下列错误："
+
+#: src/hcatalog/templates/execute.mako:36
+msgid "click the"
+msgstr "点击"
+
+#: src/hcatalog/templates/execute.mako:36
+#: src/hcatalog/templates/execute.mako:228
+msgid "Error Log"
+msgstr "错误日志"
+
+#: src/hcatalog/templates/execute.mako:36
+msgid "tab below for details"
+msgstr "下方选项卡了解详细信息"
+
+#: src/hcatalog/templates/execute.mako:41
+msgid "Example: SELECT * FROM tablename"
+msgstr "示例：SELECT * FROM tablename"
+
+#: src/hcatalog/templates/execute.mako:50
+msgid "Execute"
+msgstr "执行"
+
+#: src/hcatalog/templates/execute.mako:52
+#: src/hcatalog/templates/execute.mako:294
+#: src/hcatalog/templates/watch_results.mako:79
+#: src/hcatalog/templates/watch_results.mako:242
+msgid "Save"
+msgstr "保存"
+
+#: src/hcatalog/templates/execute.mako:54
+msgid "Save as..."
+msgstr "另存为..."
+
+#: src/hcatalog/templates/execute.mako:55
+msgid "Explain"
+msgstr "解释"
+
+#: src/hcatalog/templates/execute.mako:56
+msgid "or create a"
+msgstr "或创建一个"
+
+#: src/hcatalog/templates/execute.mako:56
+msgid "New query"
+msgstr "新查询"
+
+#: src/hcatalog/templates/execute.mako:71
+msgid "settings"
+msgstr "设置"
+
+#: src/hcatalog/templates/execute.mako:78
+#: src/hcatalog/templates/execute.mako:114
+#: src/hcatalog/templates/execute.mako:151
+msgid "Delete this setting"
+msgstr "删除此设置"
+
+#: src/hcatalog/templates/execute.mako:102
+#: src/hcatalog/templates/execute.mako:139
+#: src/hcatalog/templates/execute.mako:176
+msgid "Add"
+msgstr "添加"
+
+#: src/hcatalog/templates/execute.mako:106
+msgid "File Resources"
+msgstr "文件资源"
+
+#: src/hcatalog/templates/execute.mako:143
+msgid "User-defined Functions"
+msgstr "用户定义的函数"
+
+#: src/hcatalog/templates/execute.mako:159
+msgid "myFunction"
+msgstr "我的函数"
+
+#: src/hcatalog/templates/execute.mako:179
+msgid "Parameterization"
+msgstr "参数化"
+
+#: src/hcatalog/templates/execute.mako:181
+msgid ""
+"If checked (the default), you can include parameters like $parameter_name"
+" in your query, and users will be prompted for a value when the query is "
+"run."
+msgstr "如果选中（默认值），您可在查询中包括 $parameter_name 之类的参数，并且在运行查询时会提示用户输入值。"
+
+#: src/hcatalog/templates/execute.mako:183
+msgid "Enable Parameterization"
+msgstr "启用参数化"
+
+#: src/hcatalog/templates/execute.mako:186
+msgid "Email Notification"
+msgstr "电子邮件通知"
+
+#: src/hcatalog/templates/execute.mako:188
+msgid ""
+"If checked, you will receive an email notification when the query "
+"completes."
+msgstr "如果选中，您将在查询完成时收到一封电子邮件通知。"
+
+#: src/hcatalog/templates/execute.mako:190
+msgid "Email me on completion"
+msgstr "完成时用电子邮件通知我"
+
+#: src/hcatalog/templates/execute.mako:200
+#: src/hcatalog/templates/watch_results.mako:110
+msgid "Did you know?"
+msgstr "您知道吗？"
+
+#: src/hcatalog/templates/execute.mako:201
+msgid "You can execute queries with multiple SQL statements delimited by a semicolon ';'."
+msgstr "您可以执行多个由';'分隔的SQL语句"
+
+#: src/hcatalog/templates/execute.mako:202
+msgid "Use '\\059' instead of ';' if you have some conflicts."
+msgstr "如果发生冲突，使用 '\\059' 代替 ';'。"
+
+#: src/hcatalog/templates/execute.mako:274
+msgid "Choose a name"
+msgstr "选择名称"
+
+#: src/hcatalog/templates/execute.mako:285
+msgid "Description"
+msgstr "描述"
+
+#: src/hcatalog/templates/file_import_preview_table.mako:38
+msgid "Column names must be unique."
+msgstr "列名必须唯一"
+
+#: src/hcatalog/templates/file_import_preview_table.mako:53
+msgid "Row"
+msgstr "行"
+
+#: src/hcatalog/templates/layout.mako:35
+msgid "Databases"
+msgstr "数据库"
+
+#: src/hcatalog/templates/load_table.mako:25
+#, python-format
+msgid "HCatalog: Load Data into %(table)s"
+msgstr "HCatalog: 数据导入 %(table)s"
+
+#: src/hcatalog/templates/show_databases.mako:24
+msgid "HCatalog: Database List"
+msgstr "HCatalog: 数据库列表"
+
+#: src/hcatalog/templates/show_databases.mako:51
+msgid "Delete the selected databases"
+msgstr "删除选中的数据库"
+
+#: src/hcatalog/templates/show_databases.mako:52
+#: src/hcatalog/templates/show_tables.mako:68
+msgid "Drop"
+msgstr "删除"
+
+#: src/hcatalog/templates/show_databases.mako:101
+msgid "Loading the database list..."
+msgstr "加载数据库列表..."
+
+#: src/hcatalog/templates/show_databases.mako:110
+msgid "Dropping the database(s)..."
+msgstr "删除数据库..."
+
+#: src/hcatalog/templates/show_databases.mako:235
+msgid "No databases available"
+msgstr "没有数据库可用"
+
+#: src/hcatalog/templates/show_tables.mako:23
+#: src/hcatalog/templates/show_tables.mako:27
+msgid "HCatalog: Table List"
+msgstr "HCatalog: 表列表"
+
+#: src/hcatalog/templates/show_tables.mako:30
+msgid "Loading the table list..."
+msgstr "加载表列表..."
+
+#: src/hcatalog/templates/show_tables.mako:33
+msgid "Dropping the table(s)..."
+msgstr "删除表..."
+
+#: src/hcatalog/templates/show_tables.mako:67
+msgid "Delete the selected tables"
+msgstr "删除选中的表"
+
+#: src/hcatalog/templates/show_tables.mako:254
+msgid "No tables available"
+msgstr "无可用的表"
+
+#: src/hcatalog/templates/table_list.mako:29
+#: src/hcatalog/templates/watch_results.mako:224
+msgid "Table Name"
+msgstr "表名称"
+
+#: src/hcatalog/templates/table_list.mako:44
+msgid "Browse Data"
+msgstr "浏览数据"
+
+#: src/hcatalog/templates/util.mako:69
+#: src/hcatalog/templates/watch_results.mako:25
+msgid "Query Results"
+msgstr "查询结果"
+
+#: src/hcatalog/templates/watch_results.mako:66
+msgid "Query Results:"
+msgstr "查询结果："
+
+#: src/hcatalog/templates/watch_results.mako:71
+msgid "Collapse this panel"
+msgstr "折叠这个面板"
+
+#: src/hcatalog/templates/watch_results.mako:74
+msgid "Downloads"
+msgstr "下载"
+
+#: src/hcatalog/templates/watch_results.mako:75
+msgid "Download as CSV"
+msgstr "以 CSV 格式下载"
+
+#: src/hcatalog/templates/watch_results.mako:76
+msgid "Download as XLS"
+msgstr "以 XLS 格式下载"
+
+#: src/hcatalog/templates/watch_results.mako:84
+#: src/hcatalog/templates/watch_wait.mako:38
+#: src/hcatalog/templates/watch_wait.mako:75
+msgid "MR Job"
+msgstr "MR 任务"
+
+#: src/hcatalog/templates/watch_results.mako:84
+#: src/hcatalog/templates/watch_wait.mako:38
+#: src/hcatalog/templates/watch_wait.mako:76
+msgid "MR Jobs"
+msgstr "MR 任务"
+
+#: src/hcatalog/templates/watch_results.mako:98
+msgid "Multi-statement query"
+msgstr "多语句查询"
+
+#: src/hcatalog/templates/watch_results.mako:99
+msgid "Hue stopped as one of your query contains some results."
+msgstr "在您的查询有结果后停止。"
+
+#: src/hcatalog/templates/watch_results.mako:100
+msgid "Click on"
+msgstr "点击"
+
+#: src/hcatalog/templates/watch_results.mako:102
+msgid "next"
+msgstr "下一页"
+
+#: src/hcatalog/templates/watch_results.mako:104
+msgid "for continuing the execution of the remaining statements."
+msgstr "继续执行剩余的语句。"
+
+#: src/hcatalog/templates/watch_results.mako:111
+msgid "If the result contains a large number of columns, click a row to select a column to jump to."
+msgstr "如果执行结果包含大量的列，您可单击一行，选择您希望跳转至的列。"
+
+#: src/hcatalog/templates/watch_results.mako:112
+msgid "As you type into the field, a drop-down list displays column names that match the string."
+msgstr "当您输入列名的时候，下拉列表中会显示符合您输入的列名称。"
+
+#: src/hcatalog/templates/watch_results.mako:120
+msgid "Error"
+msgstr "错误"
+
+#: src/hcatalog/templates/watch_results.mako:122
+msgid "Results"
+msgstr "结果"
+
+#: src/hcatalog/templates/watch_results.mako:126
+#: src/hcatalog/templates/watch_wait.mako:54
+msgid "Log"
+msgstr "日志"
+
+#: src/hcatalog/templates/watch_results.mako:136
+msgid "Error!"
+msgstr "错误！"
+
+#: src/hcatalog/templates/watch_results.mako:140
+msgid "The query result has expired."
+msgstr "查询结果已过期。"
+
+#: src/hcatalog/templates/watch_results.mako:141
+msgid "You can rerun it from "
+msgstr "您可以重新运行"
+
+#: src/hcatalog/templates/watch_results.mako:147
+msgid "Warning:"
+msgstr "警告："
+
+#: src/hcatalog/templates/watch_results.mako:147
+msgid "Page offset may have incremented since last view."
+msgstr "上次查看后页面偏移量可能已增加。"
+
+#: src/hcatalog/templates/watch_results.mako:217
+msgid "Save Query Results"
+msgstr "保存查询结果"
+
+#: src/hcatalog/templates/watch_results.mako:222
+msgid "In a new table"
+msgstr "在新表中"
+
+#: src/hcatalog/templates/watch_results.mako:228
+msgid "In an HDFS directory"
+msgstr "在 HDFS 目录中"
+
+#: src/hcatalog/templates/watch_results.mako:230
+msgid "Results location"
+msgstr "结果位置"
+
+#: src/hcatalog/templates/watch_results.mako:239
+msgid "Sorry, name is required."
+msgstr "对不起，需要名称。"
+
+#: src/hcatalog/templates/watch_wait.mako:24
+#: src/hcatalog/templates/watch_wait.mako:31
+msgid "Waiting for query..."
+msgstr "等待查询..."
+
+#: src/hcatalog/templates/watch_wait.mako:47
+msgid "No Hadoop jobs were launched in running this query."
+msgstr "没有Hadoop任务在运行查询时启动。"
+
+
+#: src/beeswax/forms.py:202
+msgid "Field terminator"
+msgstr "字段终止符"
+
+#: src/beeswax/forms.py:204
+msgid "Collection terminator"
+msgstr "集合终结符"
+
+#: src/beeswax/forms.py:206
+msgid "Map key terminator"
+msgstr "Map 键终止符"
+
+msgid "External location"
+msgstr "外部位置"
+
+msgid "Creating the database..."
+msgstr "创建数据库..."
+
+msgid "Encoding"
+msgstr "编码"
+
+msgid "Input File"
+msgstr "输入文件"
+
+msgid "Delimiter"
+msgstr "分隔符"
+
+msgid "Replace delimiter with"
+msgstr "分隔符替换为"
+
+msgid "Single line comment"
+msgstr "单行注释"
+
+msgid "Read column headers"
+msgstr "读取列标题"
+
+msgid "Import data"
+msgstr "导入数据"
+
+msgid "Autodetect delimiter"
+msgstr "自动探测分隔符"
+
+msgid "Ignore whitespaces"
+msgstr "忽略空格"
+
+msgid "Java-style comments"
+msgstr "Java风格注释"
+
+msgid "Ignore tabs"
+msgstr "忽略 tab 键"
+
+msgid "Column name"
+msgstr "列名称"
+
+msgid "Column type"
+msgstr "列类型"
+
+msgid "Actions"
+msgstr "功能"
+
+msgid "Import Data"
+msgstr "导入数据"
+
+msgid "Browse Data"
+msgstr "浏览数据"
+
+msgid "View in Hive"
+msgstr "在Hive中显示"
+
+msgid "View in Pig"
+msgstr "在pig中显示"
+
+msgid "Path"
+msgstr "路径"
+
+msgid "Overwrite?"
+msgstr "是否覆盖？"
+
+msgid "Overwrite existing data"
+msgstr "覆盖已经存在的数据"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Cancel"
+msgstr "退出"
+
+msgid "Note that loading data will move data from its location into the table's storage location."
+msgstr "注意导入数据功能会将导入的数据从原先的存储位置移动到表的存储位置。"

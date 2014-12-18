@@ -24,6 +24,9 @@
 <%
     default_header_msg = _('HCatalog: Create a new database')
 %>
+<%
+    creating_database = _('Creating the database...')
+%>
 ${ commonheader(default_header_msg, app_name, user, '100px') | n,unicode }
 ${layout.menubar(section='databases')}
 
@@ -196,7 +199,6 @@ ${layout.menubar(section='databases')}
 
 
 <script src="/static/ext/js/routie-0.3.0.min.js" type="text/javascript" charset="utf-8"></script>
-
 <script type="text/javascript" charset="utf-8">
     $(document).ready(function () {
         $('form#mainForm').submit(function (event) {
@@ -205,7 +207,7 @@ ${layout.menubar(section='databases')}
 
         function submitCreate() {
             hideMainError();
-            setHeaderMsg("Creating the database...", true);
+            setHeaderMsg("${creating_database}", true);
             $(window).scrollTop(0);
         }
 

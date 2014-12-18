@@ -73,13 +73,13 @@ ${layout.menubar(section='tables')}
 		<div class="span3">
 			<div class="well sidebar-nav">
 				<ul class="nav nav-list">
-					<li class="nav-header">Actions</li>
-					<li><a href="#importData" data-toggle="modal">Import Data</a></li>
-					<li><a href="${ url(app_name + ':read_table', database=database, table=table_name) }">Browse Data</a></li>
-			        <li><a href="#dropTable" data-toggle="modal">Drop ${view_or_table_noun}</a></li>
+					<li class="nav-header">${_('Actions')}</li>
+					<li><a href="#importData" data-toggle="modal">${_('Import Data')}</a></li>
+					<li><a href="${ url(app_name + ':read_table', database=database, table=table_name) }">${_('Browse Data')}</a></li>
+			        <li><a href="#dropTable" data-toggle="modal">${_('Drop')} ${view_or_table_noun}</a></li>
 					<br>
-					<li><a href="${url(app_name + ':hive_view', database=database, table=table_name)}">View in Hive</a></li>
-					<li><a href="${url(app_name + ':pig_view', database=database, table=table_name)}">View in Pig</a></li>
+					<li><a href="${url(app_name + ':hive_view', database=database, table=table_name)}">${_('View in Hive')}</a></li>
+					<li><a href="${url(app_name + ':pig_view', database=database, table=table_name)}">${_('View in Pig')}</a></li>
 
 				</ul>
 			</div>
@@ -179,11 +179,11 @@ ${layout.menubar(section='tables')}
 	<form id="importDataForm" class="form-stacked"> ${ csrf_token_field | n } 
 	<div class="modal-header">
 		<a href="#" class="close" data-dismiss="modal">&times;</a>
-		<h3>Import data</h3>
+		<h3>${_('Import data')}</h3>
 	</div>
 	<div class="modal-body">
 	  <div class="alert">
-	        <p>Note that loading data will move data from its location into the table's storage location.</p>
+	        <p>${_("Note that loading data will move data from its location into the table's storage location.")}</p>
 	  </div>
 
 
@@ -211,7 +211,7 @@ ${layout.menubar(section='tables')}
 
 		<div class="clearfix">
 			<div class="input">
-				<input type="checkbox" name="overwrite"/> Overwrite existing data
+				<input type="checkbox" name="overwrite"/> ${_('Overwrite existing data')}
 			</div>
 		</div>
 
@@ -221,8 +221,8 @@ ${layout.menubar(section='tables')}
 	</div>
 
 	<div class="modal-footer">
-		<a href="#" class="btn primary submitImportData" data-dismiss="modal">Submit</a>
-		<a href="#" class="btn secondary" data-dismiss="modal">Cancel</a>
+		<a href="#" class="btn primary submitImportData" data-dismiss="modal">${_('Submit')}</a>
+		<a href="#" class="btn secondary" data-dismiss="modal">${_('Cancel')}</a>
 	</div>
 	</form>
 </div>

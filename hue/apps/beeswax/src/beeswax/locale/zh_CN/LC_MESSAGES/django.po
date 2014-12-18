@@ -1250,7 +1250,7 @@ msgstr "下方选项卡了解详细信息"
 
 #: src/beeswax/templates/execute.mako:36
 msgid "Example: SELECT * FROM tablename"
-msgstr "示例：从表名称中选择 *"
+msgstr "示例：SELECT * FROM tablename"
 
 #: src/beeswax/templates/execute.mako:45
 msgid "Execute"
@@ -1748,11 +1748,11 @@ msgstr "运行此查询时未启动 Hadoop 作业。"
 
 #: src/beeswax/templates/watch_results.mako:102
 msgid "Multi-statement query"
-msgstr ""
+msgstr "多语句查询"
 
 #: src/beeswax/templates/watch_results.mako:103
 msgid "Hue stopped as one of your query contains some results."
-msgstr ""
+msgstr "在您的查询有结果后停止。"
 
 #: src/beeswax/templates/watch_results.mako:104
 #, fuzzy
@@ -1766,7 +1766,7 @@ msgstr "下一页"
 
 #: src/beeswax/templates/watch_results.mako:108
 msgid "for continuing the execution of the remaining statements."
-msgstr ""
+msgstr "继续执行剩余的语句。"
 
 #: src/beeswax/templates/watch_results.mako:115
 msgid "If the result contains a large number of columns, click a row to select a column to jump to."
@@ -1851,11 +1851,11 @@ msgstr "日志"
 
 #: src/beeswax/templates/watch_results.mako:144
 msgid "The query result has expired."
-msgstr ""
+msgstr "查询结果已过期"
 
 #: src/beeswax/templates/watch_results.mako:145
 msgid "You can rerun it from "
-msgstr ""
+msgstr "您可以重新运行"
 
 #: src/beeswax/templates/watch_results.mako:151
 msgid "Warning:"

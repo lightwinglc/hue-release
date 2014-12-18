@@ -112,7 +112,8 @@ I18N_APPS := about \
   shell \
   useradmin \
   oozie \
-  pig
+  pig \
+  hcatalog
 
 COMPILE_LOCALE_TARGETS := $(I18N_APPS:%=.recursive-compile-locales/%)
 compile-locales: $(COMPILE_LOCALE_TARGETS)

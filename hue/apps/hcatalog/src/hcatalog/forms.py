@@ -18,6 +18,7 @@
 import hive_metastore
 
 from django import forms
+from django.utils.translation import ugettext as _, ugettext_lazy as _t
 from django.forms.fields import ChoiceField
 from desktop.lib.django_forms import simple_formset_factory, DependencyAwareForm
 from desktop.lib.django_forms import ChoiceOrOtherField, MultiForm, SubmitButton
@@ -170,8 +171,8 @@ class CreateTableForm(DependencyAwareForm):
     dependencies = []
 
     # Basic Data
-    name = common.HiveIdentifierField(label="Table Name", required=True)
-    comment = forms.CharField(label="Description", required=False)
+    name = common.HiveIdentifierField(label=_t("Table Name"), required=True)
+    comment = forms.CharField(label=_t("Description"), required=False)
 
     # Row Formatting
     row_format = forms.ChoiceField(required=True,
@@ -180,11 +181,11 @@ class CreateTableForm(DependencyAwareForm):
 
     # Delimited Row
     # These initials are per LazySimpleSerDe.DefaultSeparators
-    field_terminator = ChoiceOrOtherField(required=False, initial=TERMINATOR_CHOICES[0][0],
+    field_terminator = ChoiceOrOtherField(label=_t("Field terminator"), required=False, initial=TERMINATOR_CHOICES[0][0],
                                           choices=TERMINATOR_CHOICES)
-    collection_terminator = ChoiceOrOtherField(required=False, initial=TERMINATOR_CHOICES[1][0],
+    collection_terminator = ChoiceOrOtherField(label=_t("Collection terminator"), required=False, initial=TERMINATOR_CHOICES[1][0],
                                                choices=TERMINATOR_CHOICES)
-    map_key_terminator = ChoiceOrOtherField(required=False, initial=TERMINATOR_CHOICES[2][0],
+    map_key_terminator = ChoiceOrOtherField(label=_t("Map key terminator"), required=False, initial=TERMINATOR_CHOICES[2][0],
                                             choices=TERMINATOR_CHOICES)
     dependencies += [
         ("row_format", "Delimited", "field_terminator"),
@@ -253,45 +254,45 @@ class CreateTableFromFileForm(forms.Form):
     """
 
     # Basic Data
-    name = common.HiveIdentifierField(label="Table Name", required=False)
-    comment = forms.CharField(label="Description", required=False)
+    name = common.HiveIdentifierField(label=_t("Table Name"), required=False)
+    comment = forms.CharField(label=_t("Description"), required=False)
 
-    path = filebrowser.forms.PathField(label="Input File")
+    path = filebrowser.forms.PathField(label=_t("Input File"))
 
     # csv/tsv files
-    encoding = UnicodeEncodingField()
-    delimiter = ChoiceOrOtherField(required=False, initial=TERMINATOR_CHOICES[0][0], choices=TERMINATOR_CHOICES)
+    encoding = UnicodeEncodingField(label=_t("Encoding"))
+    delimiter = ChoiceOrOtherField(label=_t("Delimiter"), required=False, initial=TERMINATOR_CHOICES[0][0], choices=TERMINATOR_CHOICES)
     replace_delimiter_with = ChoiceOrOtherField(required=False, initial=TERMINATOR_CHOICES[0][0], choices=TERMINATOR_CHOICES,
-                                          label="Replace delimiter with")
+                                          label=_t("Replace delimiter with"))
     read_column_headers = forms.BooleanField(required=False, initial=True,
-                                             label="Read column headers",
+                                             label=_t("Read column headers"),
                                              help_text="")
     import_data = forms.BooleanField(required=False, initial=True,
-                                     label="Import data",
+                                     label=_t("Import data"),
                                      help_text="")
     autodetect_delimiter = forms.BooleanField(required=False, initial=True,
-                                            label="Autodetect delimiter",
+                                            label=_t("Autodetect delimiter"),
                                             help_text="")
     ignore_whitespaces = forms.BooleanField(required=False, initial=False,
-                                            label="Ignore whitespaces",
+                                            label=_t("Ignore whitespaces"),
                                             help_text="")
     ignore_tabs = forms.BooleanField(required=False, initial=False,
-                                     label="Ignore tabs",
+                                     label=_t("Ignore tabs"),
                                      help_text="")
-    single_line_comment = forms.CharField(label="Single line comment", required=False)
+    single_line_comment = forms.CharField(label=_t("Single line comment"), required=False)
     java_style_comments = forms.BooleanField(required=False, initial=False,
-                                             label="Java-style comments",
+                                             label=_t("Java-style comments"),
                                              help_text="")
 
     apply_excel_dialect = forms.BooleanField(required=False, initial=True,
-                                             label="Read column headers",
+                                             label=_t("Read column headers"),
                                              help_text="")
 
     # xls/xlsx files
-    xls_sheet = ChoiceFieldExtended(label="Sheet", required=False)
-    xls_cell_range = forms.CharField(label="Cell range", required=False)
+    xls_sheet = ChoiceFieldExtended(label=_t("Sheet"), required=False)
+    xls_cell_range = forms.CharField(label=_t("Cell range"), required=False)
     xls_read_column_headers = forms.BooleanField(required=False, initial=True,
-                                             label="Read column headers",
+                                             label=_t("Read column headers"),
                                              help_text="")
 
 
@@ -322,8 +323,8 @@ class ColumnTypeForm(DependencyAwareForm):
         ("column_type", "map", "map_key_type"),
         ("column_type", "map", "map_value_type"),
     ]
-    column_name = common.HiveIdentifierField(required=True)
-    column_type = forms.ChoiceField(required=True,
+    column_name = common.HiveIdentifierField(label=_t("Column name"), required=True)
+    column_type = forms.ChoiceField(label=_t("Column type"), required=True,
                                     choices=common.to_choices(sorted(HIVE_TYPES)),
                                     initial=HIVE_TYPES[0])
     array_type = forms.ChoiceField(required=False,
@@ -347,8 +348,8 @@ PartitionTypeFormSet = simple_formset_factory(PartitionTypeForm, add_label="add 
 
 class LoadDataForm(forms.Form):
     """Form used for loading data into an existing table."""
-    path = filebrowser.forms.PathField(label="Path")
-    overwrite = forms.BooleanField(required=False, initial=False, label="Overwrite?")
+    path = filebrowser.forms.PathField(label=_t("Path"))
+    overwrite = forms.BooleanField(required=False, initial=False, label=_t("Overwrite?"))
 
 
     def __init__(self, table_obj, *args, **kwargs):
@@ -377,12 +378,12 @@ class CreateDatabaseForm(DependencyAwareForm):
     dependencies = []
 
     # Basic Data
-    db_name = common.HiveIdentifierField(label="Database Name", required=True)
-    comment = forms.CharField(label="Description", required=False)
+    db_name = common.HiveIdentifierField(label=_t("Database Name"), required=True)
+    comment = forms.CharField(label=_t("Description"), required=False)
 
     # External if not true
     use_default_location = forms.BooleanField(required=False, initial=True, label="Use default location")
-    external_location = forms.CharField(required=False, help_text="Path to HDFS directory or file of database data.")
+    external_location = forms.CharField(label=_t("External location"), required=False, help_text="Path to HDFS directory or file of database data.")
 
     dependencies += [("use_default_location", False, "external_location")]
 
