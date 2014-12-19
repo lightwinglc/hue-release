@@ -618,3 +618,6 @@ msgstr "所有用户信息和组成员身份将根据 LDAP 服务器的当前状
 msgid "Sync"
 msgstr "同步"
 
+msgid "Delete home directory(ies)"
+msgstr "删除根目录"
+

@@ -105,7 +105,7 @@ ${layout.menubar(section='users', _=_)}
             <div class="modal-body">
                 <label class="control-label" for="delhome_conf">
                   <input type="checkbox" name="user_delhome" id="delhome_conf">
-                  <span>Delete home directory(ies)</span>
+                  <span>${_("Delete home directory(ies)")}</span>
                 </label>
             </div>
             <div class="modal-footer">
