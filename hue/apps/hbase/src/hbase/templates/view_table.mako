@@ -31,33 +31,33 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
                 <ul class="nav nav-list">
                     <li class="nav-header">${_('Actions')}</li>
                     
-                    <li>
-                      <a href="javascript:void(0);"
-                      data-bind="visible: isEnabled, click: disableTable">${_('Disable table')}</a>
-                    </li>
-                    
-                    <li>
-                      <a href="javascript:void(0);"
-                         data-bind="visible: !isEnabled, click: enableTable">${_('Enable table')}</a>
-                    </li>
+##                    <li>
+##                      <a href="javascript:void(0);"
+##                      data-bind="visible: isEnabled, click: disableTable">${_('Disable table')}</a>
+##                    </li>
+##
+##                    <li>
+##                      <a href="javascript:void(0);"
+##                         data-bind="visible: !isEnabled, click: enableTable">${_('Enable table')}</a>
+##                    </li>
 
-                    <li>
-                       <a href="javascript:void(0);"
-                          data-bind="click: compactTableModal">${_('Compact  table')}</a>
-                    </li>
+##                    <li>
+##                       <a href="javascript:void(0);"
+##                          data-bind="click: compactTableModal">${_('Compact  table')}</a>
+##                    </li>
 
-                    <li>
-                      <a href="javascript:void(0);" data-bind="click: dropTableConfirm">${_('Drop table')}
-                      </a>
-                    </li>
+##                    <li>
+##                      <a href="javascript:void(0);" data-bind="click: dropTableConfirm">${_('Drop table')}
+##                      </a>
+##                    </li>
 
                     <li>
                       <a href="/hbase/table/browse/${table.name}">${_('Browsea data')}</a>
                     </li>
                     
-                    <li>
-                      <a href="/hbase/table/browse/pig/${table.name}">${_('View in pig')}</a>
-                    </li>
+##                    <li>
+##                      <a href="/hbase/table/browse/pig/${table.name}">${_('View in pig')}</a>
+##                    </li>
                     
                 </ul>
             </div>
@@ -65,11 +65,11 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
         <div class="span9">
           <div class="span4">
           <table class="table-hover table-condensed table-bordered">
-            <caption>Column Families</caption>
+            <caption>${_('Column Families')}</caption>
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Options</th>
+                <th>${_('Name')}</th>
+                <th>${_('Options')}</th>
               </tr>
             </thead>
             <tbody>
@@ -90,7 +90,7 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
           </div>
           <div class="span4">
             <table class="table-hover table-condensed table-bordered">
-              <caption>Regions</caption>
+              <caption>${_('Regions')}</caption>
               <tbody>
                 % for region in table.regions():
                 <tr>
@@ -113,22 +113,22 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
 <div id="modal-from-dom" class="modal hide fade">
     <div class="modal-header">
         <a href="#" class="close" data-dismiss="modal">&times;</a>
-         <h3>Delete Table?</h3>
+         <h3>${_('Delete Table?')}</h3>
     </div>
     <div class="modal-body">
-        <p>You are about to delete this table?</p>
+        <p>${_('You are about to delete this table?')}</p>
     </div>
     <div class="modal-footer">
-        <a class="btn danger" data-bind="click: dropTable">Yes</a>
-        <a href="javascript:$('#modal-from-dom').modal('hide')" class="btn secondary">No</a>
+        <a class="btn danger" data-bind="click: dropTable">${_('Yes')}</a>
+        <a href="javascript:$('#modal-from-dom').modal('hide')" class="btn secondary">${_('No')}</a>
     </div>
 </div>
 
 
 <div id="compactionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3>Choose compaction type</h3>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3>${_('Choose compaction type')}</h3>
   </div>
   <div class="modal-body">
     <p>
@@ -137,8 +137,8 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
     </p>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary" data-bind="click: compact">Compact</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">${_('Close')}</button>
+    <button class="btn btn-primary" data-bind="click: compact">${_('Compact')}</button>
   </div>
 </div>
 

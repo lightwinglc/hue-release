@@ -30,7 +30,7 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
     <div style="margin: 0px 0px 10px 0px">
       <form data-bind="submit: getJSONData"><input name="filter" type="text" data-bind="value: queryFilter"
              class="input-xlarge search-query"
-             placeholder="row_key1,row_key2 ...">&nbsp;&nbsp;&nbsp;&nbsp;
+             placeholder=${_("row_key1,row_key2 ...")}>&nbsp;&nbsp;&nbsp;&nbsp;
 
       <a href="" class="btn toolbarBtn" data-bind="click: addRowModal"> <i class="icon-plus-sign"></i>
         ${_('Add row')}
@@ -54,7 +54,7 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
       <div>
         <h5>
           <div class="rowhead" data-bind="text: r.row"></div>
-          <a data-bind="click: dropRow" href="javascript:void(0);"><i class="icon-trash pull-right" title="Drop row"></i></a>
+          <a data-bind="click: dropRow" href="javascript:void(0);"><i class="icon-trash pull-right" title="${_('Drop row')}"></i></a>
         </h5>
       </div>
       <div class="accordion" data-bind="attr: {id: r.row}">
@@ -91,14 +91,14 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
                     </div>
                     <div class="cell-control">
                       <a href="javascript:void(0);" data-bind="click: editCell">
-                        <i class="icon-pencil" title="Edit cell"></i>
-                        <i class="icon-ok" title="Save cell" style="display:none;"></i>
+                        <i class="icon-pencil" title=${_("Edit cell")}></i>
+                        <i class="icon-ok" title=${_("Save cell")} style="display:none;"></i>
                       </a>
                       <a href="javascript:void(0)" data-bind="click: getVersions">
-                        <i class="icon-eye-open" title="Browse previous versions"></i>
+                        <i class="icon-eye-open" title=${_("Browse previous versions")}></i>
                       </a>
                       <a href="javascript:void(0)" data-bind="click:  dropCell">
-                        <i class="icon-trash" title="Remove cell"></i>
+                        <i class="icon-trash" title=${_("Remove cell")}></i>
                       </a>
                     </div>
 
@@ -116,13 +116,13 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
   <!-- /ko -->
 
 <ul class="pager">
-  <li><a href="javascript:void(0);" data-bind="visible: prevPageRow,click: getPrevData">Previous</a></li>
-  <li><a href="javascript:void(0);" data-bind="visible: nextPageRow,click: getNextData">Next</a></li>
+  <li><a href="javascript:void(0);" data-bind="visible: prevPageRow,click: getPrevData">${_('Previous')}</a></li>
+  <li><a href="javascript:void(0);" data-bind="visible: nextPageRow,click: getNextData">${_('Next')}</a></li>
 </ul>
 
 
 <label for="rows_per_page">
-Rows per page:
+${_('Rows per page:')}
 </label>
 
 <select id="rows_per_page" data-bind="value: rowsPerPage">
@@ -140,28 +140,28 @@ Rows per page:
  <form data-bind="submit: addRow">
      <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Add row</h3>
+    <h3>${_('Add row')}</h3>
   </div>
   <div class="modal-body">
     <p>
       <label class="control-label" for="rowKeyInput">
-        Row Key:
+        ${_('Row Key:')}
       </label>
       <input type="text" id="rowKeyInput" required="required"
       data-bind="value: rowKeyValue"/>
       <label class="control-label" for="columnFamilySelect"> 
-        Column Family: 
+        ${_('Column Family:')}
       </label> 
       <select id="columnFamilySelect" 
               data-bind="options: column_families,value: cfValue" 
               required="required" ></select> 
       <label class="control-label" for="columnInput"> 
-        Column: 
+        ${_('Column:')}
       </label>
       <input type="text" id="columnInput" required="required"
       data-bind="value: columnValue" />
       <label class="control-label" for="valueInput"> 
-        Value: 
+        ${_('Value:')}
       </label>
       <input id="valueInput" type="text" required="required"
       data-bind="value: valueVal" />
@@ -169,7 +169,7 @@ Rows per page:
     </p>
   </div>
   <div class="modal-footer">
-    <button class="btn btn-success" type="submit">Add row</button>
+    <button class="btn btn-success" type="submit">${_('Add row')}</button>
   </div>
   </form>
 </div>

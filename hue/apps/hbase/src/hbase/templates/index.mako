@@ -72,7 +72,7 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
                     <td>
                       <a data-bind="attr: {href: url}, html: disabledName()"></a>
                     </td>
-                    <td><a data-bind="attr: {href: browseDataUrl}" class="btn btn-primary browse" >Browse Data</a></td>
+                    <td><a data-bind="attr: {href: browseDataUrl}" class="btn btn-primary browse" >${_('Browse Data')}</a></td>
 
                   </tr>
                 </tbody>
@@ -88,34 +88,34 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
 
 <div class="modal hide fade alert alert-block alert-error fade in"
      id="tableAlert" role="dialog">
-  <button type="button" class="close" data-dismiss="alert">×</button>
+  <button type="button" class="close" data-dismiss="alert">x</button>
   <h4 class="alert-heading" id="alertText"></h4>
   <p>
-    <a class="btn" href="#" data-dismiss="modal">OK</a>
+    <a class="btn" href="#" data-dismiss="modal">${_('OK')}</a>
   </p>
 </div>
 
 <div id="compactionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3>Choose compaction type</h3>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3>${_('Choose compaction type')}</h3>
   </div>
   <div class="modal-body">
     <p>
-      <input type="radio" name="compactionType" value="major" />Major
-      <input type="radio" name="compactionType" value="minor" checked/>Minor
+      <input type="radio" name="compactionType" value="major" />${_('Major')}
+      <input type="radio" name="compactionType" value="minor" checked/>${_('Minor')}
     </p>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary" data-bind="click: compact">Compact</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">${_('Close')}</button>
+    <button class="btn btn-primary" data-bind="click: compact">${_('Compact')}</button>
   </div>
 </div>
 
 <div id="compactionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3>Choose compaction type</h3>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3>${_('Choose compaction type')}</h3>
   </div>
   <div class="modal-body">
     <p>
@@ -124,8 +124,8 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
     </p>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary" data-bind="click: compact">Compact</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">${_('Close')}</button>
+    <button class="btn btn-primary" data-bind="click: compact">${_('Compact')}</button>
   </div>
 </div>
 
@@ -133,20 +133,20 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
 <div id="modal-from-dom" class="modal hide fade">
     <div class="modal-header">
         <a href="#" class="close" data-dismiss="modal">&times;</a>
-         <h3>Delete Tables?</h3>
+         <h3>${_('Delete Tables?')}</h3>
     </div>
     <div class="modal-body">
-        <p>You are about to delete next tables:</p>
+        <p>${_('You are about to delete next tables:')}</p>
         <p>
           <ul id="deleteTableList">
             
           </ul>
         </p>
-        <p>Are you sure you want to delete them?</p>
+        <p>${_('Are you sure you want to delete them?')}</p>
     </div>
     <div class="modal-footer">
-        <a class="btn danger" data-bind="click: deleteTables">Yes</a>
-        <a href="javascript:$('#modal-from-dom').modal('hide')" class="btn secondary">No</a>
+        <a class="btn danger" data-bind="click: deleteTables">${_('Yes')}</a>
+        <a href="javascript:$('#modal-from-dom').modal('hide')" class="btn secondary">${_('No')}</a>
     </div>
 </div>
 

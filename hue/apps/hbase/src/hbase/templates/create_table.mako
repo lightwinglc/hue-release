@@ -24,25 +24,25 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
   <form method="POST" action="#">
     ${ csrf_token_field | n }
     <p>
-      <label>Table name</label>
+      <label>${_('Table name')}</label>
       <input type="text" name="table_name" required="required"  />
       <input type="hidden" name="data" data-bind="value: jsonData()"
     </p>
     <p class="span-9">
       <div class="btn-group">
           <a href="#cf_popup" role="button"  data-toggle="modal"
-             class="btn btn-primary btn-mini">Add Column Family <i class="icon-plus-sign icon-white"></i></a>&nbsp;
-          <button class="btn btn-warning btn-mini" data-bind="click: removeCF">Delete Column
-          Family <i class="icon-remove icon-white"></i></button>
+             class="btn btn-primary btn-mini">${_('Add Column Family ')}<i class="icon-plus-sign icon-white"></i></a>&nbsp;
+          <button class="btn btn-warning btn-mini" data-bind="click: removeCF">${_('Delete Column Family ')}
+          <i class="icon-remove icon-white"></i></button>
           </div>
 
       <table class="table table-bordered">
-        <caption><h2>Column families</h2></caption>
+        <caption><h2>${_('Column families')}</h2></caption>
         <thead>
           <tr>
             <td><input type="checkbox" data-bind="click: selectAllCFs" /></td>
-            <td>Name</td>
-            <td>Options</td>
+            <td>${_('Name')}</td>
+            <td>${_('Options')}</td>
           </tr>
         </thead>
         <tbody data-bind="foreach: cf">
@@ -55,7 +55,7 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
       </table>
     </p>
     
-     <input type="submit" value="Create table" />
+     <input type="submit" value="${_('Create table')}" />
   </form>
 </div>
 
@@ -63,20 +63,20 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
      aria-labelledby="myModalLabel" aria-hidden="true">
 <form data-bind="submit: addCF" id="cf_form">
   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Add column family</h3>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3 id="myModalLabel">${_('Add column family')}</h3>
   </div>
   <div class="modal-body">
     <p class="span-4">
       
-      <label>Name</label>
+      <label>${_('Name')}</label>
       <input type="text" data-bind="value: cfNameText" />
 
-      <label>Maximum Versions</label>
+      <label>${_('Maximum Versions')}</label>
       <input type="number" name="max_versions" min="1"
       data-bind="value: maxVersionsValue" />
 
-      <label>Compression</label>
+      <label>${_('Compression')}</label>
       <select data-bind="value: compressionTypeValue">
         <option>None</option>
         <option value="LZO">LZO</option>
@@ -84,17 +84,17 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
         <option value="SNAPPY">Snappy</option>
       </select>
       <label class="checkbox">
-        <input type="checkbox" data-bind="checked: inMemoryValue"> In memory
+        <input type="checkbox" data-bind="checked: inMemoryValue">${_(' In memory')}
       </label>
     </p>
     <p class="span-3">
-      <label>Time to live (seconds)</label>
+      <label>${_('Time to live (seconds)')}</label>
       <input type="number" name="time_to_live" min="1" data-bind="value: ttlValue"/>
 
-      <label>Bloom filter number hashes</label>
+      <label>${_('Bloom filter number hashes')}</label>
       <input type="number" name="max_hashes" min="1" data-bind="value: bloomFilterNumHashesVal" />
 
-      <label>Bloom filter type</label>
+      <label>${_('Bloom filter type')}</label>
       <select data-bind="value: bloomFilterTypeValue">
         <option>None</option>
         <option>ROW</option>
@@ -102,13 +102,13 @@ ${ commonheader(_('Hbase'), 'hbase', user) | n,unicode }
       </select>
 
         <label class="checkbox">
-        <input type="checkbox" data-bind="checked: blockCacheValue"> Block cache enabled
+        <input type="checkbox" data-bind="checked: blockCacheValue">${_(' Block cache enabled')}
       </label>
     </p>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary" type="submit">Add</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">${_('Close')}</button>
+    <button class="btn btn-primary" type="submit">${_('Add')}</button>
   </div>
 </form>
 </div>
