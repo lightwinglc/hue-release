@@ -90,6 +90,9 @@ def start_server(options):
 
 
 def runcpserver(argset=[], **kwargs):
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
+
     # Get the options
     options = CPSERVER_OPTIONS.copy()
     options.update(kwargs)
