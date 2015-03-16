@@ -35,7 +35,7 @@ setup(
   packages = find_packages('src'),
   package_dir = {'': 'src'},
   install_requires = ['setuptools', 'desktop'],
-  entry_points = { 'desktop.sdk.application': 'shell=shell' },
+  entry_points = { 'desktop.sdk.application1': 'shell=shell' },
   zip_safe = False,
   package_data = {
     # Include static resources.  Package_data doesn't

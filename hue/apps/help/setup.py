@@ -25,5 +25,5 @@ setup(
       packages = find_packages('src'),
       package_dir = {'': 'src'},
       install_requires = ['setuptools', 'desktop'],
-      entry_points = { 'desktop.sdk.application': 'help=help' },
+      entry_points = { 'desktop.sdk.application1': 'help=help' },
 )
